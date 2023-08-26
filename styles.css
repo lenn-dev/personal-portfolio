@@ -1,0 +1,126 @@
+html{
+    box-sizing: border-box;
+    
+}
+:root {
+    --main-red: rgb(177, 5, 54);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    font-family:  'Arial Narrow Bold', sans-serif;
+    background-color: rgb(63, 63, 93);
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+
+ul{
+   list-style: none;
+   
+   
+}
+li{
+    display: list-item;
+    width:60px;
+    padding-left: 15px;
+    
+}
+li > a{
+    text-decoration: none;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+nav > ul > li:hover{
+    background-color: rgb(34, 33, 33);
+}
+#about{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(34, 33, 33);
+    color: aliceblue;
+    margin-top: 0;
+    
+}
+.name{
+    
+    padding: 50% 5% 0 0;
+    font-size: 50px;
+    text-align: center;
+}
+.position{
+    font-size: 20px;
+    font-family: verdana;
+    text-align: center;
+    color: rgb(177, 5, 54);
+}
+#works{
+    width: 100%;
+    
+    
+}
+#works h1{
+    
+    padding-top: 10%;
+    color: aliceblue;
+    text-align: center;
+}
+.projects{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project{
+    width: 150px;
+    height: 150px;
+    border: 1px solid blueviolet;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+img{
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.project-title{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(34, 33, 33);
+    padding-top: 10px;
+    font-size: 8px;
+    font-family: Geneva,sans-serif;
+    text-align: center;
+    color: aliceblue; 
+}
+.code{
+    font-size: 10px;
+    color: orangered;
+    opacity: 0;
+}
+.project:hover .code{
+    opacity: 1;
+}
+.show-all{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(34, 33, 33);
+    text-decoration: none;
+}
+
+
